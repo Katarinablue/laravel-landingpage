@@ -1,0 +1,240 @@
+/* CSS: 0portoKamar.css */
+
+/* Resetting some basic styles */
+body, h1, p, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  .nav__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .checkbox {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  ul li a {
+    color: white;
+    padding: 10px;
+  }
+  
+  ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  
+  /* Responsive Navigation Menu */
+  #check:checked + label + ul {
+    display: block;
+  }
+  
+  @media (max-width: 768px) {
+    .checkbox {
+      display: block;
+    }
+  
+    ul {
+      display: none;
+      flex-direction: column;
+      background-color: #333;
+      width: 100%;
+      position: absolute;
+      top: 50px;
+      left: 0;
+    }
+  
+    ul li {
+      text-align: center;
+      border-bottom: 1px solid #444;
+    }
+  
+    ul li a {
+      display: block;
+      padding: 15px;
+    }
+  
+    #check:checked + label + ul {
+      display: flex;
+    }
+  }
+  
+  /* Section Styling */
+  .section {
+    padding: 50px 20px;
+    background-color: white;
+  }
+  
+  .section__container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .content {
+    max-width: 600px;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    color: #888;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .title span {
+    color: #ff7f50;
+  }
+  
+  .description {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .action__btns {
+    display: flex;
+    gap: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  
+  .hire__me {
+    background-color: #ff7f50;
+    color: white;
+  }
+  
+  .portfolio {
+    background-color: transparent;
+    color: #ff7f50;
+    border: 2px solid #ff7f50;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Profile Image Styling */
+  .image img {
+    max-width: 90%;
+    border-radius: 90%;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .section__container {
+      padding: 0 20px;
+    }
+  
+    .title {
+      font-size: 2rem;
+    }
+  
+    .description {
+      font-size: 0.95rem;
+    }
+  
+    .hire__me,
+    .portfolio {
+      padding: 8px 15px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .section__container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .image img {
+      width: 250px;
+      margin-bottom: 20px;
+    }
+  
+    .content {
+      max-width: 100%;
+    }
+  
+    .title {
+      font-size: 1.8rem;
+    }
+  
+    .description {
+      font-size: 0.9rem;
+    }
+  
+    .hire__me,
+    .portfolio {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo a {
+      font-size: 1.2rem;
+    }
+  
+    .title {
+      font-size: 1.5rem;
+    }
+  
+    .description {
+      font-size: 0.85rem;
+    }
+  
+    .hire__me,
+    .portfolio {
+      padding: 8px 15px;
+      font-size: 0.8rem;
+    }
+  }
+  
